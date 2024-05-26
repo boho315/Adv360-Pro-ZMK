@@ -2,7 +2,7 @@ macro_snippingtool: macro_snippingtool{
 compatible = "zmk,behavior-macro";
 label = "macro_snippingtool";
 #binding-cells = <0>;
-bindings = <&kp LWIN>, <&kp S>, <&kp N>, <&kp I>, <&kp P>, <&kp P>, <&kp I>, <&kp N>, <&kp G>, <&kp SPACE>, <&kp T>, <&kp O>, <&kp O>, <&kp L>, <&kp RET>, <&bl BL_ON>, <&kp LEFT-ALT>, <&kp N>, <&bl BL_OFF>;
+bindings = <&kp LWIN>, <&kp S>, <&kp N>, <&kp I>, <&kp P>, <&kp P>, <&kp I>, <&kp N>, <&kp G>, <&kp SPACE>, <&kp T>, <&kp O>, <&kp O>, <&kp L>, <&kp RET>, <&bl BL_TOG>, <&kp LEFT-ALT>, <&kp N>, <&bl BL_TOG>;
 };
 macro_fontcali: macro_fontcali{
 compatible = "zmk,behavior-macro";
