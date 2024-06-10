@@ -19,24 +19,26 @@
 #include <dt-bindings/zmk/backlight.h>
 
 / {
-  behaviors {
-    #include "macros.dtsi"
-    #include "version.dtsi"
 
-    hm: homerow_mods {
-        compatible = "zmk,behavior-hold-tap";
-        label = "HOMEROW_MODS";
-        #binding-cells = <2>;
-        tapping-term-ms = <200>;
-        quick_tap_ms = <175>;
-        flavor = "tap-preferred";
-        bindings = <&kp>, <&kp>;
-    };
-  };
+ combos    {  compatible = "zmk,combos";
+              combo_copy  { timeout-ms = <1000>;  key-positions = <35 4>;  bindings = <&kp LC(C)>; };
+              combo_paste { timeout-ms = <1000>;  key-positions = <35 5>;  bindings = <&kp LC(V)>; };
+           };
 
+ behaviors {  #include "macros.dtsi"
+              #include "version.dtsi"
+              hm: homerow_mods { compatible = "zmk,behavior-hold-tap";
+                                 label = "HOMEROW_MODS";
+                                 #binding-cells = <2>;
+                                 tapping-term-ms = <200>;
+                                 quick_tap_ms = <175>;
+                                 flavor = "tap-preferred";
+                                 bindings = <&kp>, <&kp>;
+                              };
+           };
 
-         /* &macro_fontcali     &macro_snippingtool */
-keymap {compatible = "zmk,keymap";
+  
+keymap {compatible = "zmk,keymap";    /* &macro_fontcali     &macro_snippingtool */
 
  default_layer { bindings = <
 
