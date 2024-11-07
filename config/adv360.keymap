@@ -20,11 +20,12 @@
 / {
 
  combos    {    compatible = "zmk,combos";
-                combo_copy        { timeout-ms = <1000>;  key-positions = <35  4>;  bindings = <&kp LC(C)>;     };  /* L-Ctrl-4   --> Ctrl-C (Copy)   */
-                combo_paste       { timeout-ms = <1000>;  key-positions = <35  5>;  bindings = <&kp LC(V)>;     };  /* L-Ctrl-5   --> Ctrl-V (Paste)  */
-                combo_enter       { timeout-ms = <1000>;  key-positions = <35 34>;  bindings = <&kp ENTER>;     };  /* L-Ctrl-hk2 --> ENTER */
-                combo_sw_input1   { timeout-ms = <1000>;  key-positions = <35  6>;  bindings = <&kp LG(SPACE)>; };  /* L-Ctrl-kp  --> Toggle language from L-hand */
-                combo_sw_input2   { timeout-ms = <1000>;  key-positions = <38 21>;  bindings = <&kp LG(SPACE)>; };  /* R-Ctrl-hk3 --> Toggle language from R-hand*/
+                combo_paste       { timeout-ms = <1000>;  key-positions = <35  6>;  bindings = <&kp LC(V)>;     };  /* L-Ctrl-kp  --> Ctrl-C (Paste)  */
+                combo_cut         { timeout-ms = <1000>;  key-positions = <35 20>;  bindings = <&kp LC(C)>;     };  /* L-Ctrl-hk1 --> Ctrl-C (Copy)   */
+                combo_copy        { timeout-ms = <1000>;  key-positions = <35 34>;  bindings = <&kp LC(X)>;     };  /* L-Ctrl-hk2 --> Ctrl-V (Cut)    */
+                combo_enter       { timeout-ms = <1000>;  key-positions = <36 20>;  bindings = <&kp ENTER>;     };  /* L-Alt-hk1  --> ENTER */
+                combo_sw_input1   { timeout-ms = <1000>;  key-positions = <36  6>;  bindings = <&kp LG(SPACE)>; };  /* L-Alt-kp   --> Toggle language from L-hand */
+                combo_sw_input2   { timeout-ms = <1000>;  key-positions = <37 21>;  bindings = <&kp LG(SPACE)>; };  /* R-Win-hk3  --> Toggle language from R-hand*/
                 
               /*combo_showqueued  { timeout-ms = <1000>;  key-positions = <34 15>;  bindings = <&macro_showqueued>; }; */
               /*combo_togInput    { timeout-ms = <50>;    key-positions = <20 34>;  bindings = <&kp LG(SPACE)>;     }; */
@@ -48,8 +49,8 @@ keymap {compatible = "zmk,keymap";    /* &macro_fontcali     &macro_snippingtool
 
 default_layer { bindings = <                                                                                                                                                                                                                                       
   &kp EQUAL  &kp N1           &kp N2       &kp N3       &kp N4       &kp N5       &kp ESC                                                                  &mo 3                  &kp N6  &kp N7     &kp N8       &kp N9           &kp N0            &kp MINUS
-  &kp TAB    &kp SINGLE_QUOTE &kp COMMA    &kp DOT      &kp P        &kp Y        &mo 3                                                                    &none                  &kp F   &kp G      &kp C        &kp R            &kp L             &kp FSLH
-  &kp ESC    &kp A            &kp O        &kp E        &kp U        &kp I        &kp SPACE          &kp LCTRL &kp LALT &kp LGUI   &kp RCTRL               &none                  &kp D   &kp H      &kp T        &kp N            &kp S             &kp BACKSLASH
+  &kp TAB    &kp SINGLE_QUOTE &kp COMMA    &kp DOT      &kp P        &kp Y        &kp SPACE                                                                &none                  &kp F   &kp G      &kp C        &kp R            &kp L             &kp FSLH
+  &kp ESC    &kp A            &kp O        &kp E        &kp U        &kp I        &mo 3              &kp LCTRL &kp LALT &kp LGUI   &kp RCTRL               &none                  &kp D   &kp H      &kp T        &kp N            &kp S             &kp BACKSLASH
   &kp LSHFT  &kp SEMICOLON    &kp Q        &kp J        &kp K        &kp X                                     &kp HOME &kp PG_UP                                                 &kp B   &kp M      &kp W        &kp V            &kp Z             &kp RSHFT
   &mo 2      &kp GRAVE        &kp CAPS     &kp LEFT     &kp RIGHT                           &kp BSPC &kp DEL   &kp END  &kp PG_DN  &kp ENTER  &kp SPACE                                   &kp UP     &kp DOWN     &kp LBKT         &kp RBKT          &mo 2
                                                                                                                                                                                                                                                                   >; };
