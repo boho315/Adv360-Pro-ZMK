@@ -20,12 +20,12 @@
 / {
 
  combos    {    compatible = "zmk,combos";
-                combo_paste       { timeout-ms = <1000>;  key-positions = <35  6>;  bindings = <&kp LC(X)>;     };  /* L-Ctrl-kp  --> Ctrl-X (Cut)    */
-                combo_cut         { timeout-ms = <1000>;  key-positions = <35 20>;  bindings = <&kp LC(V)>;     };  /* L-Ctrl-hk1 --> Ctrl-V (Paste)  */
+                combo_cut         { timeout-ms = <1000>;  key-positions = <35  6>;  bindings = <&kp LC(X)>;     };  /* L-Ctrl-kp  --> Ctrl-X (Cut)    */
+                combo_paste       { timeout-ms = <1000>;  key-positions = <35 20>;  bindings = <&kp LC(V)>;     };  /* L-Ctrl-hk1 --> Ctrl-V (Paste)  */
                 combo_copy        { timeout-ms = <1000>;  key-positions = <35 34>;  bindings = <&kp LC(C)>;     };  /* L-Ctrl-hk2 --> Ctrl-C (Copy)   */
                 combo_sw_input1   { timeout-ms = <1000>;  key-positions = <36  6>;  bindings = <&kp LG(SPACE)>; };  /* L-Alt-kp   --> Toggle language from L-hand */
-                combo_enter       { timeout-ms = <1000>;  key-positions = <36 20>;  bindings = <&bt BT_SEL 0>;  };  /* L-Alt-hk1  --> Mod 1 */
-                combo_enter       { timeout-ms = <1000>;  key-positions = <36 34>;  bindings = <&bt BT_SEL 3>;  };  /* L-Alt-hk2  --> Mod 4 */
+                combo_btsel0      { timeout-ms = <1000>;  key-positions = <36 20>;  bindings = <&bt BT_SEL 0>;  };  /* L-Alt-hk1  --> Mod 1 */
+                combo_btsel3      { timeout-ms = <1000>;  key-positions = <36 34>;  bindings = <&bt BT_SEL 3>;  };  /* L-Alt-hk2  --> Mod 4 */
                 combo_sw_input2   { timeout-ms = <1000>;  key-positions = <37 21>;  bindings = <&kp LG(SPACE)>; };  /* R-Win-hk3  --> Toggle language from R-hand*/
                 
               /*combo_showqueued  { timeout-ms = <1000>;  key-positions = <34 15>;  bindings = <&macro_showqueued>; }; */
@@ -66,7 +66,7 @@ layer_fn { bindings = <
   &kp F1     &kp F2           &kp F3       &kp F4       &kp F5       &kp F6       &none                                                                    &none                  &kp F7  &kp F8     &kp F9       &kp F10          &kp F11           &kp F12
   &tog 1     &trans           &trans       &trans       &trans       &trans       &none                                                                    &none                  &trans  &trans     &trans       &trans           &trans            &trans
   &tog 4     &trans           &trans       &trans       &trans       &trans       &none              &trans    &trans   &trans     &trans                  &none                  &trans  &trans     &trans       &trans           &kp LG(LS(S))     &trans
-  &trans     &kp LC(Z)        &kp LC(Y)    &kp LC(C)    &kp LC(V)    &kp LC(X)                                 &trans   &trans                                                    &trans  &trans     &trans       &trans           &trans            &trans
+  &kp CAPS   &kp LC(Z)        &kp LC(Y)    &kp LC(C)    &kp LC(V)    &kp LC(X)                                 &trans   &trans                                                    &trans  &trans     &trans       &trans           &trans            &trans
   &trans     &trans           &trans       &kp LG(LEFT) &kp LG(RIGHT)                  &kp LG(SPACE) &trans    &trans   &trans     &trans     &trans                                      &trans     &trans       &trans           &trans            &trans
                                                                                                                                                                                                                                                                     >; };
 layer_mod { bindings = <                                                                                                                                                                                                                                                 
