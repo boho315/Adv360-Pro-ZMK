@@ -24,8 +24,8 @@
                 combo_cut         { timeout-ms = <1000>;  key-positions = <35 20>;  bindings = <&kp LC(V)>;     };  /* L-Ctrl-hk1 --> Ctrl-V (Paste)  */
                 combo_copy        { timeout-ms = <1000>;  key-positions = <35 34>;  bindings = <&kp LC(C)>;     };  /* L-Ctrl-hk2 --> Ctrl-C (Copy)   */
                 combo_sw_input1   { timeout-ms = <1000>;  key-positions = <36  6>;  bindings = <&kp LG(SPACE)>; };  /* L-Alt-kp   --> Toggle language from L-hand */
-                combo_enter       { timeout-ms = <1000>;  key-positions = <36 20>;  bindings = <&kp MOD(1)>;    };  /* L-Alt-hk1  --> Mod 1 */
-                combo_enter       { timeout-ms = <1000>;  key-positions = <36 34>;  bindings = <&kp MOD(4)>;    };  /* L-Alt-hk2  --> Mod 4 */
+                combo_enter       { timeout-ms = <1000>;  key-positions = <36 20>;  bindings = <&bt BT_SEL 0>;  };  /* L-Alt-hk1  --> Mod 1 */
+                combo_enter       { timeout-ms = <1000>;  key-positions = <36 34>;  bindings = <&bt BT_SEL 3>;  };  /* L-Alt-hk2  --> Mod 4 */
                 combo_sw_input2   { timeout-ms = <1000>;  key-positions = <37 21>;  bindings = <&kp LG(SPACE)>; };  /* R-Win-hk3  --> Toggle language from R-hand*/
                 
               /*combo_showqueued  { timeout-ms = <1000>;  key-positions = <34 15>;  bindings = <&macro_showqueued>; }; */
