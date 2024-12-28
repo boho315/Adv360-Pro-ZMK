@@ -21,7 +21,7 @@
             macro_mainbox: macro_mainbox  {  compatible = "zmk,behavior-macro"; 
                                              label = "macro_mainbox";   
                                              #binding-cells = <0>;
-                                             bindings = <&bt BT_SEL 0>, <&tog 1>;      //Mod1 (Machine 1), toggle to layer 1 (Dvorak)
+                                             bindings = <&bt BT_SEL 0>, <&tog 0>;      //Mod1 (Machine 1), toggle to layer 1 (Dvorak)
                                           };
 
             macro_gamebox: macro_gamebox  {  compatible = "zmk,behavior-macro"; 
