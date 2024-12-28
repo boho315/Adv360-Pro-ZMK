@@ -7,24 +7,27 @@
 
 / {
  behaviors {  
-              #include "macros.dtsi"      /* each include must have it's own dedicated line */
-              #include "version.dtsi"
-              hm: homerow_mods {  compatible = "zmk,behavior-hold-tap";
-                                  label = "HOMEROW_MODS";
-                                  #binding-cells = <2>;
-                                  tapping-term-ms = <200>;
-                                  quick_tap_ms = <175>;
-                                  flavor = "tap-preferred";
-                                  bindings = <&kp>, <&kp>;
+            #include "macros.dtsi"      /* each include must have it's own dedicated line */
+            #include "version.dtsi"
+            hm: homerow_mods {   compatible = "zmk,behavior-hold-tap";
+                                 label = "HOMEROW_MODS";
+                                 #binding-cells = <2>;
+                                 tapping-term-ms = <200>;
+                                 quick_tap_ms = <175>;
+                                 flavor = "tap-preferred";
+                                 bindings = <&kp>, <&kp>;
                               };
-              macro_mainbox: macro_mainbox{  compatible = "zmk,behavior-macro"; label = "macro_mainbox"; #binding-cells = <0>;
-                                             bindings = <&bt BT_SEL 0>, <&tog 1>;
-                                          };
-             macro_gamebox: macro_gamebox{
-                                             compatible = "zmk,behavior-macro";
-                                             label = "macro_gamebox";
+
+            macro_mainbox: macro_mainbox  {  compatible = "zmk,behavior-macro"; 
+                                             label = "macro_mainbox";   
                                              #binding-cells = <0>;
-                                             bindings = <&bt BT_SEL 3>, <&tog 4>;
+                                             bindings = <&bt BT_SEL 0>, <&tog 1>;      //Mod1 (Machine 1), toggle to layer 1 (Dvorak)
+                                          };
+
+            macro_gamebox: macro_gamebox  {  compatible = "zmk,behavior-macro"; 
+                                             label = "macro_gamebox";   
+                                             #binding-cells = <0>;
+                                             bindings = <&bt BT_SEL 3>, <&tog 4>;     //Mod3 (Machine 4), toggle to layer 4 (Qwerty)
                                           };
            };
 
@@ -38,7 +41,7 @@
                 combo_btsel0      { timeout-ms = <1000>;  key-positions = <36 20>;  bindings = <&bt BT_SEL 0>;   };  // L-Alt-hk1  --> Mod 1 
                 combo_btsel3      { timeout-ms = <1000>;  key-positions = <36 34>;  bindings = <&bt BT_SEL 3>;   };  // L-Alt-hk2  --> Mod 4 
                 combo_mainbox     { timeout-ms = <1000>;  key-positions = <0 4>;    bindings = <&macro_mainbox>; };  // 1-4        --> Mod 1, Dvorak 
-             // combo_gamebox     { timeout-ms = <1000>;  key-positions = <0 5>;    bindings = <&macro_gamebox>; };  // 1-5        --> Mod 4, Qwerty
+                combo_gamebox     { timeout-ms = <1000>;  key-positions = <0 5>;    bindings = <&macro_gamebox>; };  // 1-5        --> Mod 4, Qwerty
                 
              // combo_showqueued  { timeout-ms = <1000>;  key-positions = <34 15>;  bindings = <&macro_showqueued>; }; 
              // combo_togInput    { timeout-ms = <50>;    key-positions = <20 34>;  bindings = <&kp LG(SPACE)>;     }; 
