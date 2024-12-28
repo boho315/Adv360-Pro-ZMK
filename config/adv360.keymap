@@ -9,18 +9,18 @@
 / {
 
  combos    {    compatible = "zmk,combos";
-                combo_cut         { timeout-ms = <1000>;  key-positions = <35  6>;  bindings = <&kp LC(X)>;      };  /* L-Ctrl-kp  --> Ctrl-X (Cut)    */
-                combo_paste       { timeout-ms = <1000>;  key-positions = <35 20>;  bindings = <&kp LC(V)>;      };  /* L-Ctrl-hk1 --> Ctrl-V (Paste)  */
-                combo_copy        { timeout-ms = <1000>;  key-positions = <35 34>;  bindings = <&kp LC(C)>;      };  /* L-Ctrl-hk2 --> Ctrl-C (Copy)   */
-                combo_sw_input1   { timeout-ms = <1000>;  key-positions = <36  6>;  bindings = <&kp LG(SPACE)>;  };  /* L-Alt-kp   --> Toggle language from L-hand */
-                combo_sw_input2   { timeout-ms = <1000>;  key-positions = <37 21>;  bindings = <&kp LG(SPACE)>;  };  /* R-Win-hk3  --> Toggle language from R-hand*/
-                combo_btsel0      { timeout-ms = <1000>;  key-positions = <36 20>;  bindings = <&bt BT_SEL 0>;   };  /* L-Alt-hk1  --> Mod 1 */
-                combo_btsel3      { timeout-ms = <1000>;  key-positions = <36 34>;  bindings = <&bt BT_SEL 3>;   };  /* L-Alt-hk2  --> Mod 4 */
-              //combo_mainbox     { timeout-ms = <1000>;  key-positions = <0 4>;    bindings = <&marco_mainbox>; };  /* 1-4        --> Mod 1, Dvorak */
-              //combo_gamebox     { timeout-ms = <1000>;  key-positions = <0 5>;    bindings = <&marco_gamebox>; };  /* 1-5        --> Mod 4, Qwerty*/
+                combo_cut         { timeout-ms = <1000>;  key-positions = <35  6>;  bindings = <&kp LC(X)>;      };  // L-Ctrl-kp  --> Ctrl-X (Cut)    
+                combo_paste       { timeout-ms = <1000>;  key-positions = <35 20>;  bindings = <&kp LC(V)>;      };  // L-Ctrl-hk1 --> Ctrl-V (Paste)  
+                combo_copy        { timeout-ms = <1000>;  key-positions = <35 34>;  bindings = <&kp LC(C)>;      };  // L-Ctrl-hk2 --> Ctrl-C (Copy)   
+                combo_sw_input1   { timeout-ms = <1000>;  key-positions = <36  6>;  bindings = <&kp LG(SPACE)>;  };  // L-Alt-kp   --> Toggle language from L-hand 
+                combo_sw_input2   { timeout-ms = <1000>;  key-positions = <37 21>;  bindings = <&kp LG(SPACE)>;  };  // R-Win-hk3  --> Toggle language from R-hand
+                combo_btsel0      { timeout-ms = <1000>;  key-positions = <36 20>;  bindings = <&bt BT_SEL 0>;   };  // L-Alt-hk1  --> Mod 1 
+                combo_btsel3      { timeout-ms = <1000>;  key-positions = <36 34>;  bindings = <&bt BT_SEL 3>;   };  // L-Alt-hk2  --> Mod 4 
+             // combo_mainbox     { timeout-ms = <1000>;  key-positions = <0 4>;    bindings = <&marco_mainbox>; };  // 1-4        --> Mod 1, Dvorak 
+             // combo_gamebox     { timeout-ms = <1000>;  key-positions = <0 5>;    bindings = <&marco_gamebox>; };  // 1-5        --> Mod 4, Qwerty
                 
-              /*combo_showqueued  { timeout-ms = <1000>;  key-positions = <34 15>;  bindings = <&macro_showqueued>; }; */
-              /*combo_togInput    { timeout-ms = <50>;    key-positions = <20 34>;  bindings = <&kp LG(SPACE)>;     }; */
+             // combo_showqueued  { timeout-ms = <1000>;  key-positions = <34 15>;  bindings = <&macro_showqueued>; }; 
+             // combo_togInput    { timeout-ms = <50>;    key-positions = <20 34>;  bindings = <&kp LG(SPACE)>;     }; 
            };
 
  behaviors {  
