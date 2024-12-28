@@ -1,4 +1,4 @@
-macro_mainbox: macro_mainbox{
+macro_mainbox: macro_mainbox{  
 compatible = "zmk,behavior-macro";
 label = "macro_mainbox";
 #binding-cells = <0>;
