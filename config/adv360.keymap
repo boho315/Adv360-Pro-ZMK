@@ -19,7 +19,7 @@
              // combo_mainbox     { timeout-ms = <1000>;  key-positions = <0 4>;    bindings = <&marco_mainbox>; };  // 1-4        --> Mod 1, Dvorak 
              // combo_gamebox     { timeout-ms = <1000>;  key-positions = <0 5>;    bindings = <&marco_gamebox>; };  // 1-5        --> Mod 4, Qwerty
                 
-             // combo_showqueued  { timeout-ms = <1000>;  key-positions = <34 15>;  bindings = <&macro_showqueued>; }; 
+                combo_showqueued  { timeout-ms = <1000>;  key-positions = <34 15>;  bindings = <&macro_showqueued>; }; 
              // combo_togInput    { timeout-ms = <50>;    key-positions = <20 34>;  bindings = <&kp LG(SPACE)>;     }; 
            };
 
