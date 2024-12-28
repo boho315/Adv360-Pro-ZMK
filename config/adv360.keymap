@@ -20,7 +20,6 @@
            };
 
  combos    {    
-                #include "macros.dtsi"      /* each include must have it's own dedicated line */
                 compatible = "zmk,combos";
                 combo_cut         { timeout-ms = <1000>;  key-positions = <35  6>;  bindings = <&kp LC(X)>;      };  // L-Ctrl-kp  --> Ctrl-X (Cut)    
                 combo_paste       { timeout-ms = <1000>;  key-positions = <35 20>;  bindings = <&kp LC(V)>;      };  // L-Ctrl-hk1 --> Ctrl-V (Paste)  
