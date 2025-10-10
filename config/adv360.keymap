@@ -39,8 +39,8 @@
  combos    {    
                 compatible = "zmk,combos";
                 combo_copy        { timeout-ms = <1000>;  key-positions = <35  6>;  bindings = <&kp LC(C)>;           };  // L-Ctrl-kp  --> Ctrl-C (Copy)   
-                combo_cut         { timeout-ms = <1000>;  key-positions = <36  6>;  bindings = <&kp LC(X)>;           };  // L-Alt -kp  --> Ctrl-X (Cut)    
-                combo_paste       { timeout-ms = <1000>;  key-positions = <35 20>;  bindings = <&kp LC(V)>;           };  // L-Ctrl-hk1 --> Ctrl-V (Paste)  
+                combo_cut         { timeout-ms = <1000>;  key-positions = <35 20>;  bindings = <&kp LC(X)>;           };  // L-Alt -kp  --> Ctrl-X (Cut)    
+                combo_paste       { timeout-ms = <1000>;  key-positions = <36  6>;  bindings = <&kp LC(V)>;           };  // L-Ctrl-hk1 --> Ctrl-V (Paste)  
                 combo_mainbox     { timeout-ms = <1000>;  key-positions = <0 4>;    bindings = <&macro_mainbox>;      };  // =+4        --> Mod+1 (Machine 1), Dvorak 
                 combo_gamebox     { timeout-ms = <1000>;  key-positions = <0 5>;    bindings = <&macro_gamebox>;      };  // =+5        --> Mod+4 (Machine 4), Qwerty
                 combo_sawbox      { timeout-ms = <1000>;  key-positions = <0 2>;    bindings = <&macro_sawbox>;       };  // =+2        --> Mod+2 (Machine 2)
