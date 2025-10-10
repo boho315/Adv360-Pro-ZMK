@@ -49,7 +49,6 @@
 
              // combo_showqueued  { timeout-ms = <1000>;  key-positions = <34 15>;  bindings = <&macro_showqueued>;   }; 
              // combo_togInput    { timeout-ms = <50>;    key-positions = <20 34>;  bindings = <&kp LG(SPACE)>;       }; 
-             // combo_sw_input1   { timeout-ms = <1000>;  key-positions = <>;  bindings = <&kp ESC)>;            };  // L-Alt-kp   --> Esc
              // combo_sw_input2   { timeout-ms = <1000>;  key-positions = <37 21>;  bindings = <&kp LG(SPACE)>;       };  // R-Win-hk3  --> Toggle language from right hand
              // combo_btsel0      { timeout-ms = <1000>;  key-positions = <36 20>;  bindings = <&bt BT_SEL 0>;        };  // L-Alt-hk1  --> Mod 1 (Machine 1)
              // combo_btsel3      { timeout-ms = <1000>;  key-positions = <36 34>;  bindings = <&bt BT_SEL 3>;        };  // L-Alt-hk2  --> Mod 4 (Machine 4)
@@ -63,7 +62,7 @@ keymap {compatible = "zmk,keymap";    /* &macro_fontcali     &macro_snippingtool
 default_layer { bindings = <                                                                                                                                                                                                                                       
   &kp EQUAL  &kp N1           &kp N2       &kp N3       &kp N4       &kp N5       &kp ENTER                                                                  &mo 3                  &kp N6  &kp N7     &kp N8       &kp N9           &kp N0            &kp MINUS
   &kp TAB    &kp SINGLE_QUOTE &kp COMMA    &kp DOT      &kp P        &kp Y        &kp SPACE                                                                  &none                  &kp F   &kp G      &kp C        &kp R            &kp L             &kp FSLH
-  &mo 3      &kp A            &kp O        &kp E        &kp U        &kp I        &kp ESC            &kp LCTRL &kp LALT   &kp LGUI   &kp RCTRL               &none                  &kp D   &kp H      &kp T        &kp N            &kp S             &kp BACKSLASH
+  &mo 3      &kp A            &kp O        &kp E        &kp U        &kp I        &kp LG(SPACE)      &kp LCTRL &kp LALT   &kp LGUI   &kp RCTRL               &kp LG(SPACE)          &kp D   &kp H      &kp T        &kp N            &kp S             &kp BACKSLASH
   &kp LSHFT  &kp SEMICOLON    &kp Q        &kp J        &kp K        &kp X                                     &kp HOME   &kp PG_UP                                                 &kp B   &kp M      &kp W        &kp V            &kp Z             &kp RSHFT
   &mo 2      &kp GRAVE        &kp LGUI     &kp LEFT     &kp RIGHT                           &kp BSPC &kp DEL   &kp END    &kp PG_DN  &kp ENTER  &kp SPACE                                   &kp UP     &kp DOWN     &kp LBKT         &kp RBKT          &mo 2
                                                                                                                                                                                                                                                                   >; };
@@ -79,7 +78,7 @@ layer_fn { bindings = <
   &tog 1     &trans           &trans       &trans       &trans       &trans       &none                                                                      &none                  &trans  &trans     &trans       &trans           &trans            &trans
   &tog 4     &trans           &trans       &trans       &trans       &trans       &none              &trans    &trans     &trans     &trans                  &none                  &trans  &trans     &trans       &trans           &kp LG(LS(S))     &trans
   &kp CAPS   &kp LC(Z)        &kp LC(Y)    &kp LC(C)    &kp LC(V)    &kp LC(X)                                 &trans     &trans                                                    &trans  &trans     &trans       &trans           &trans            &trans
-  &trans     &trans           &trans       &kp LG(LEFT) &kp LG(RIGHT)                  &kp LG(SPACE) &trans    &kp LA(F4) &trans     &trans     &trans                                      &trans     &trans       &trans           &trans            &trans
+  &trans     &trans           &trans       &kp LG(LEFT) &kp LG(RIGHT)                       &kp ESC  &trans    &kp LA(F4) &trans     &trans     &trans                                      &trans     &trans       &trans           &trans            &trans
                                                                                                                                                                                                                                                                     >; };
 layer_mod { bindings = <                                                                                                                                                                                                                                                 
   &none      &bt BT_SEL 0     &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none                                                                      &trans                 &none   &none      &none        &none            &none             &none
